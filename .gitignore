@@ -1,0 +1,9 @@
+candidates.jsonl
+candidates.jsonl.gz
+sample_candidates.json
+submission.xlsx
+submission.csv
+*.zip
+__pycache__/
+*.pyc
+.DS_Store

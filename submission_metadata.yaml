@@ -1,0 +1,48 @@
+team_name: "ARIA v2"
+
+team_members:
+  - name: "Mansi Viresh Ballore"
+    college: "Progressive education Society's Modern College of Engineering, Pune (SPPU)"
+    branch: "Computer Engineering"
+    year: "Final Year"
+  - name: "Sonam Rajesh Korade"
+    college: "Walchand Institute of Technology, Solapur"
+    branch: "IT"
+    year: "Final Year"
+
+project_name: "ARIA v2 — Adaptive Retrieval Intelligence Architecture"
+track: "Data & AI Challenge — Track 1"
+
+approach_summary: |
+  ARIA v2 uses 5 novel techniques beyond keyword matching:
+
+  1. Career DNA Fingerprinting: Each career role is encoded as a DNA token
+     (R=Retrieval, M=ML, P=Platform, S=Software, D=Data, C=Services, X=Non-tech).
+     Sequence similarity is computed against the ideal JD DNA.
+
+  2. Implicit Skill Graph: Skills are mapped to a pre-built retrieval/ML cluster
+     graph. Cluster depth is measured — how many interconnected nodes are activated,
+     validated by endorsements + assessment scores.
+
+  3. Velocity-Weighted Signals: All 23 behavioral signals are time-decayed
+     (half-life: 30 days). Active-yesterday candidates score higher than
+     identical-average-but-inactive candidates. Includes salary budget alignment.
+
+  4. Peer Benchmark Percentile: Candidates are grouped by YOE band x company tier
+     and scored as percentiles within their cohort. Best-in-class, not just above average.
+
+  5. JD Gap Vector: JD is decomposed into 9 weighted requirements. Each candidate
+     gets a requirement-level gap analysis with evidence. Hard gaps trigger penalties.
+     Reasoning is generated from actual gap evidence, not templates.
+
+  Final: raw_fit × velocity_multiplier, where raw_fit combines all 5 techniques.
+
+tech_stack:
+  - "Python 3.10+"
+  - "scikit-learn (TF-IDF, cosine similarity)"
+  - "numpy (vectorized scoring)"
+  - "pandas (data manipulation)"
+  - "Streamlit (interactive demo)"
+  - "No GPU required — 100K candidates in < 3 minutes on CPU"
+
+reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./submission.csv"
