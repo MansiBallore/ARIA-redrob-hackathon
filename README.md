@@ -3,6 +3,10 @@
 **Modern College of Engineering, Pune (SPPU)**
 
 ---
+## Demo
+
+![Demo](demo.png)
+
 
 ## ⚡ One Command to Run
 
